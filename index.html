@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <style>
+      /* Custom responsive adjustments without altering UI logic */
+      .navbar-nav {
+        align-items: center;
+      }
+      @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-nav .nav-item {
+          margin-left: 35px;
+          margin-right: 35px;
+        }
+      }
+      .carousel-item img {
+        object-fit: cover;
+      }
+      .map-under-text p {
+        margin-bottom: 0;
+      }
+      /* Fix for responsive brand logos */
+      .brand-logo-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 50px;
+      }
+      .brand-logo-item img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .gift-img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container1">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="https://www.mychocolateworld.in/images/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Over Collaction</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Featured Brand</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.mychocolateworld.in/images/newBanner-01.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 645px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.mychocolateworld.in/images/newBanner-02.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 645px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.mychocolateworld.in/images/newBanner-03.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 645px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.mychocolateworld.in/images/newBanner-04.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 645px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.mychocolateworld.in/images/newBanner-05.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 645px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.mychocolateworld.in/images/newBanner-06.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 645px"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="container-fluid">
+        <p class="inner-text">
+          My Chocolate World My Chocolate World My Chocolate World My Chocolate
+          World My Chocolate World My Chocolate World My Chocolate World
+        </p>
+      </div>
+    </div>
+
+    <div class="container3 p-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-12">
+            <h3 class="about-text">
+              About
+              <span class="choco-img"
+                ><img
+                  src="https://www.mychocolateworld.in/images/logo.png"
+                  alt=""
+              /></span>
+            </h3>
+
+            <p class="pragraph-textone">
+              My Chocolate World is born out of the chocolate cravings of choco
+              lovers, featuring high-end luxury chocolate brands from all over
+              the world.
+            </p>
+
+            <p class="pragraph-texttwo">
+              What sets apart My Chocolate World is it evokes memories,
+              nostalgia, emotions and a bunch of other feelings to come together
+              by consuming the favorite chocolates from around the world. Back
+              in olden times, we all happened to have a good deal going with our
+              family traveling abroad. Nobody ever comes back without a bunch of
+              confections from our favorite international chocolate brands. Cut
+              to present
+            </p>
+
+            <p class="pragraph-textthree">
+              My Chocolate World shelves a collection of more than 100 varieties
+              of fine imported and artisanal handmade chocolates for your easy
+              access, whenever you crave for. Encased in aesthetically opulent
+              finery, our craft goes beyond chocolates to celebrate sweetness
+              with a dedicated gifting lounge; that features an exquisite
+              chocolate collection from boutique chocolate brands to customize a
+              hamper for every occasion.
+            </p>
+
+            <p class="pragraph-textfour">
+              With an extravagant chocolate collection from famous international
+              brands, we aim to sate the cravings of all chocolate connoisseurs
+              with goodies that lift your spirits.
+            </p>
+          </div>
+
+          <div
+            class="col-lg-6 col-12 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="https://www.mychocolateworld.in/images/About_Image.svg"
+              alt=""
+              class="chocolate-img img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container4 p-5">
+      <div class="container">
+        <h2 class="header-text d-flex justify-content-center mb-5">
+          Featured Brands
+        </h2>
+
+        <div class="row multi-item gy-4">
+          <!-- Row 1 -->
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://www.mychocolateworld.in/images/after-eight.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">AFTER EIGHT</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/alfredo.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">ALFREDO</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/altodis.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">ALTOIDS</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/Butlers.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">BUTLERS</p>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/Butlers.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">CHUPA CHUPS</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/chupa-chups.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">M & M's</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/m&m.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">ENTISI</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/Entisi.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">CROWNFIELD</p>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/crownfiled.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">EWEDEL</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/ewedel.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">FERRERO</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/ferero.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">FISHERMANS</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/Fivegum.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">FIVE GUM</p>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/fruitella.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">FRUITELLA</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/govida.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">GODIVA</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/hershey.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">HERSHEYS INDIAN</p>
+          </div>
+          <div class="col-6 col-md-3 brand-logo-item">
+            <img
+              src="https://mychocolateworld.in/images/jaw-breaker.png"
+              alt="not found a page"
+              class="choco-img"
+            />
+            <div class="brand-line"></div>
+            <p class="img-text">JAW BREAKER</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container5 py-5 position-relative overflow-hidden">
+      <div class="container position-relative z-3">
+        <h3 class="choco-heading-text d-flex justify-content-center mb-5">
+          Customized Gift Hampers
+        </h3>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-3 col-6 d-flex justify-content-center">
+            <img
+              src="https://www.mychocolateworld.in/images/hamper-08.png"
+              alt="not found a page"
+              class="gift-img"
+            />
+          </div>
+          <div class="col-lg-3 col-6 d-flex justify-content-center">
+            <img
+              src="https://www.mychocolateworld.in/images/hamper-08.png"
+              alt="not found a page"
+              class="gift-img"
+            />
+          </div>
+          <div class="col-lg-3 col-6 d-flex justify-content-center">
+            <img
+              src="https://www.mychocolateworld.in/images/hamper-02.png"
+              alt="not found a page"
+              class="gift-img"
+            />
+          </div>
+          <div class="col-lg-3 col-6 d-flex justify-content-center">
+            <img
+              src="https://www.mychocolateworld.in/images/hamper-04.png"
+              alt="not found a page"
+              class="gift-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <video
+        playsinline=""
+        autoplay=""
+        muted=""
+        loop=""
+        class="choco-video position-absolute top-50 start-50 translate-middle w-100 h-100 object-fit-cover"
+        style="z-index: 1; opacity: 0.3"
+      >
+        <source src="https://mychocolateworld.in/images/video.m4v" />
+      </video>
+    </div>
+
+    <div class="container6 py-5">
+      <div class="container">
+        <h1 class="header-text-contact d-flex justify-content-center mb-5">
+          Contact Us
+        </h1>
+        <div class="row g-4">
+          <div class="col-lg-6 col-12">
+            <div class="card p-3 h-100 d-flex flex-column">
+              <u class="map-heading-text mb-3">Bodakdev Store (Ahmedabad)</u>
+
+              <div class="ratio ratio-16x9 mb-3">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7268364360075!2d72.5051779!3d23.0337999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b9ec1d9e757%3A0x8eead0702a5b25d3!2sMy%20Chocolate%20World!5e0!3m2!1sen!2sin!4v1666008766919!5m2!1sen!2sin"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="map-img rounded"
+                ></iframe>
+              </div>
+
+              <div class="map-under-text flex-grow-1">
+                29, Rudra Square Apartment, Judges Bunglow Rd, beside Gormoh
+                Restaurant, Char Rasta, Bodakdev, Ahmedabad, Gujarat 380015
+                <div class="map-inner-text mt-2">
+                  Phone: <a href="#">(+91) 9978642907</a>
+                </div>
+              </div>
+
+              <div class="card under-card mt-3 border-0">
+                <a
+                  class="btn map-button w-100"
+                  href="https://www.google.com/maps/place/My+Chocolate+World/@23.0368189,72.5157434,15z/data=!4m14!1m7!3m6!1s0x395e9b9ec1d9e757:0x8eead0702a5b25d3!2sMy+Chocolate+World!8m2!3d23.0368189!4d72.5157434!16s%2Fg%2F11tb2jn2pb!3m5!1s0x395e9b9ec1d9e757:0x8eead0702a5b25d3!8m2!3d23.0368189!4d72.5157434!16s%2Fg%2F11tb2jn2pb?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                  role="button"
+                  >Get Direction</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card p-3 h-100 d-flex flex-column">
+              <u class="map-heading-text mb-3">Rajkot Store</u>
+
+              <div class="ratio ratio-16x9 mb-3">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14767.676079656861!2d70.7875303!3d22.2810572!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb8b2943c837%3A0xce1b761c39111a99!2sMy%20Chocolate%20World%20-%20Rajkot!5e0!3m2!1sen!2sin!4v1728975853034!5m2!1sen!2sin"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="map-img rounded"
+                ></iframe>
+              </div>
+
+              <div class="map-under-text flex-grow-1">
+                Asopalav Avenue Shop No. 8, Beside Mahatma Gandhi School, Opp.
+                Aalap Twin Tower, Nana Mava Main Road, Rajkot - 360005.
+                <div class="map-inner-text mt-2">
+                  Phone: <a href="#"> (+91) 7211175754</a>
+                </div>
+              </div>
+
+              <div class="card under-card mt-3 border-0">
+                <a
+                  class="btn map-button w-100"
+                  href="https://www.google.com/maps/place/My+Chocolate+World/@23.0368189,72.5157434,15z/data=!4m14!1m7!3m6!1s0x395e9b9ec1d9e757:0x8eead0702a5b25d3!2sMy+Chocolate+World!8m2!3d23.0368189!4d72.5157434!16s%2Fg%2F11tb2jn2pb!3m5!1s0x395e9b9ec1d9e757:0x8eead0702a5b25d3!8m2!3d23.0368189!4d72.5157434!16s%2Fg%2F11tb2jn2pb?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                  role="button"
+                  >Get Direction</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container7 p-5">
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 col-12">
+            <img
+              src="https://www.mychocolateworld.in/images/logo.png"
+              alt="not found page"
+              class="img-fluid mb-3"
+            />
+
+            <p class="footer-end-text">
+              My Chocolate World is born out of the chocolate cravings of choco
+              lovers, featuring high-end luxury chocolate brands from all over
+              the world.
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <h4 class="footer-header mb-3">Quick Links</h4>
+
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-start">
+              <li class="nav-item m-0">
+                <a
+                  class="nav-link footer-inner-text p-0"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item m-0 mt-2">
+                <a class="nav-link footer-inner-text p-0" href="#"
+                  >Over Collaction</a
+                >
+              </li>
+
+              <li class="nav-item m-0 mt-2">
+                <a class="nav-link footer-inner-text p-0" href="#"
+                  >Featured Brand</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <p class="footer-second-text">
+              29, Rudra Square, Judges Bunglow Char Rasta, Beside Gormoh
+              Restaurant, Bodakdev, Ahmedabad, Gujarat-380015
+            </p>
+
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-start">
+              <li class="nav-item m-0">
+                <a
+                  class="nav-link footer-second-text p-0 text-break"
+                  aria-current="page"
+                  href="#"
+                  >bodakdev@mychocolateeorld.in</a
+                >
+              </li>
+              <li class="nav-item m-0 mt-2">
+                <a class="nav-link footer-second-text p-0" href="#"
+                  >+91 99786 42907</a
+                >
+              </li>
+            </ul>
+
+            <div class="links d-flex mt-3">
+              <a class="nav-link footer-icons p-0" aria-current="page" href="#"
+                ><i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a
+                class="nav-link footer-icons p-0 ms-3"
+                aria-current="page"
+                href="#"
+                ><i class="fa-brands fa-instagram choco-icons"></i>
+              </a>
+
+              <a
+                class="nav-link footer-icons p-0 ms-3"
+                aria-current="page"
+                href="#"
+                ><i class="fa-brands fa-facebook choco-icons"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-place my-4"></div>
+        <hr class="separator-line" />
+        <p class="footer-last-text d-flex justify-content-center m-0">
+          ©2022 My Chocolate World. All Rights reserved
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

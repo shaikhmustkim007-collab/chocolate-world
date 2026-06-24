@@ -1,0 +1,94 @@
+body {
+  font-family: sans-serif;
+}
+.navbar {
+  background-color: #d32f2f;
+} /* Teal/Turquoise matching header */
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.brand-line {
+  border: none;
+  border-top: 3px solid #f1dec1; /* Exact beige/golden color */
+  width: 70%; /* Line ki width, aap isko adjust kar sakte hain */
+  margin: 20px auto 10px auto; /* Image aur text ke beech ka gap */
+  opacity: 1; /* Bootstrap ki default opacity ko hatane ke liye */
+}
+
+/* Brand text color to match the design (Red) */
+.brand-logo-item .img-text {
+  margin-top: 0;
+  color: #cc0000; /* Red color matching the original design */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container1 {
+  background-color: #d32f2f;
+}
+
+.inner-text {
+  color: #d32f2f;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.about-text {
+  color: #dcb04f;
+  font-size: 2.75rem;
+}
+
+.header-text {
+  color: #d32f2f;
+  font-weight: 700;
+}
+
+.container3 {
+  background-color: #d32f2f;
+  color: white;
+} /* Deep Red About Section */
+.container4 {
+  background-color: #ffffff;
+  padding-top: 20rem;
+}
+.container5 {
+  background-color: #d32f2f;
+  color: white;
+} /* Red Background for Gifts */
+.container6 {
+  background-color: #ffffff;
+}
+.container7 {
+  background-color: #d32f2f;
+  color: white;
+} /* Footer Red */
+
+.footer-header {
+  color: #dcb04f;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.footer-inner-text {
+  font-weight: 300;
+  font-size: 17px;
+}
+.footer-second-text {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.brand-logo-item img {
+  max-width: 120px;
+}
+.choco-heading-text {
+  font-weight: bold;
+}
+.map-button {
+  background-color: #d32f2f;
+  color: white;
+}
